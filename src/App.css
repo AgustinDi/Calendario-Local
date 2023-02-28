@@ -1,16 +1,4 @@
-@media only screen and (max-width: 425px){
-	/*Small smartphones [325px -> 425px]*/
-  iframe {
-    height: 200px;
-  }
-}
 
-@media only screen and (max-width: 600px){
-	/*Big smartphones [426px -> 600px]*/
-  /* iframe {
-    height: 250px
-  } */
-}
 
 body {
   background-color: rgb(172, 172, 248);
@@ -27,4 +15,35 @@ body {
 iframe {
   width: 80%;
   height: 240px;
+}
+
+
+@media only screen and (max-width: 1024px){
+	/*Big smartphones [426px -> 600px]*/
+  iframe {
+    height: 500px
+  }
+  body{
+    background-color: rgb(44, 44, 129);
+  }
+}
+
+@media only screen and (max-width: 320px){
+	/*Small smartphones [325px -> 425px]*/
+  iframe {
+    height: 200px;
+  }
+  body{
+    background-color: rgb(107, 209, 107);
+  }
+}
+
+
+@media only screen and (max-width: 412px){  
+  body {
+    background-color: rgb(219, 96, 96);
+  }
+  iframe {
+    height: 222px;
+  }
 }
