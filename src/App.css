@@ -1,8 +1,8 @@
 @media only screen and (max-width: 425px){
 	/*Small smartphones [325px -> 425px]*/
-/* iframe {
-  height: 200px
-} */
+  iframe {
+    height: 200px;
+  }
 }
 
 @media only screen and (max-width: 600px){
