@@ -32,10 +32,10 @@ p {
   }
 }
 
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 476px){
 	/*Small smartphones [325px -> 425px]*/
   iframe {
-    height: 200px;
+    height: 240px;
   }
   body{
     background-color: rgb(107, 209, 107);
@@ -49,5 +49,15 @@ p {
   }
   iframe {
     height: 222px;
+  }
+}
+
+@media only screen and (max-width: 320px){
+	/*Small smartphones [325px -> 425px]*/
+  iframe {
+    height: 200px;
+  }
+  body{
+    background-color: rgb(107, 209, 107);
   }
 }
