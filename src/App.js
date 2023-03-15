@@ -1,4 +1,5 @@
 import './App.css';
+import CardsPeople from './Component/CardsPeople';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           * Arte - niños, jovenes y adultos
           * 3547 673524
         </p>
+        <CardsPeople/>
       </header>
     </div>
   );
