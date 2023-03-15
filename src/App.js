@@ -17,16 +17,6 @@ function App() {
            acogedor y creativo diseñado para fomentar el aprendizaje y la colaboración.
         </p>
           <h4>Nuestros Profes!:</h4>
-        <p>
-          <b>Agustin Di giacinto:</b><br/>
-          * Apoyo Secundario - Primer ciclo
-          * 3547 598556
-        </p>
-        <p>
-          <b>Lorena:</b><br/>
-          * Arte - niños, jovenes y adultos
-          * 3547 673524
-        </p>
         <CardsPeople/>
       </header>
     </div>
