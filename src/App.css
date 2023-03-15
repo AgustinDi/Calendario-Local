@@ -4,8 +4,13 @@ body {
   background-color: rgb(172, 172, 248);
 }
 
+center {
+  display: flex;
+  justify-content: center;
+}
+
 .App-header {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,12 +18,21 @@ body {
 }
 
 iframe {
-  width: 80%;
   height: 500px;
 }
 
-p {
-  width: 80%;
+
+.wtspImage {
+  width: 80px;
+}
+
+.CardPeople {
+  display: flex;
+  justify-content: space-between;
+}
+
+#CardsPeople {
+  width: 30%;
 }
 
 
@@ -61,3 +75,5 @@ p {
     background-color: rgb(107, 209, 107);
   }
 }
+
+

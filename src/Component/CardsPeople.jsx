@@ -7,8 +7,7 @@ export default function CardsPeople(){
     
     return (
         <div id="CardsPeople">
-        {people.map(i=><CardPeople people={i}/>
-        )}
+            {people.map(i=><CardPeople people={i} key={i.name}/>)}
         </div>
     )
 }
