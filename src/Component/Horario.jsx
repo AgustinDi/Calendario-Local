@@ -8,7 +8,7 @@ export default function Horario(){
     return(
         <>
             <img alt='horario' onClick={()=>setShow(true)} src={url}></img>
-            {show && <FloatImg url={url}></FloatImg>}
+            {show && <FloatImg url={url} set={setShow}></FloatImg>}
         </>
     )
 }
