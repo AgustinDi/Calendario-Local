@@ -17,7 +17,7 @@ center {
   justify-content: center;
 }
 
-iframe {
+#horario {
   height: 500px;
 }
 
@@ -38,7 +38,7 @@ iframe {
 
 @media only screen and (max-width: 1024px){
 	/*Big smartphones [426px -> 600px]*/
-  iframe {
+  #horario {
     height: 500px
   }
   body{
@@ -48,7 +48,7 @@ iframe {
 
 @media only screen and (max-width: 476px){
 	/*Small smartphones [325px -> 425px]*/
-  iframe {
+  #horario {
     height: 240px;
   }
   body{
@@ -61,14 +61,14 @@ iframe {
   body {
     background-color: rgb(219, 96, 96);
   }
-  iframe {
+  #horario {
     height: 222px;
   }
 }
 
 @media only screen and (max-width: 320px){
 	/*Small smartphones [325px -> 425px]*/
-  iframe {
+  #horario {
     height: 200px;
   }
   body{

@@ -1,14 +1,15 @@
 import './App.css';
 import CardsPeople from './Component/CardsPeople.jsx';
-import Horario from './Component/Horario.jsx'
+import Horario from './Component/Horario.jsx';
+import NavBar from './Component/NavBar';
 
 function App() {
   return (
     <div className="App">
       <center>
       <header className="App-header">
+          <NavBar/>
           <h1>Calendario Local!</h1>
-          <hr></hr>
           <Horario></Horario>
           <h3>Sobre nosotros:</h3>
           <p>
