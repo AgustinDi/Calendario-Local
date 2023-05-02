@@ -9,7 +9,7 @@ function App() {
       <center>
       <header className="App-header">
           <NavBar/>
-          <h1>Calendario Local!</h1>
+          <h1>Calendario</h1>
           <Horario></Horario>
           <h3>Sobre nosotros:</h3>
           <p>
@@ -19,7 +19,7 @@ function App() {
             y clases de apoyo emocionantes programados para el próximo mes. Nuestro espacio es un lugar
              acogedor y creativo diseñado para fomentar el aprendizaje y la colaboración.
           </p>
-            <h4>Nuestros Profes!:</h4>
+            <h2>Nuestros Profes!:</h2>
           <CardsPeople/>
       </header>
       </center>
