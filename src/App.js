@@ -6,9 +6,9 @@ import NavBar from './Component/NavBar';
 function App() {
   return (
     <div className="App">
+      <header className="App-header">
           <NavBar/>
           <center>
-      <header className="App-header">
           <h1>Calendario</h1>
           <Horario></Horario>
           <h3>Sobre nosotros:</h3>
@@ -21,8 +21,8 @@ function App() {
           </p>
             <h2>Nuestros Profes!:</h2>
           <CardsPeople/>
-      </header>
           </center>
+      </header>
     </div>
   );
 }
