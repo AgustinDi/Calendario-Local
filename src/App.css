@@ -1,4 +1,6 @@
-
+.app {
+  width: 100%;
+}
 
 body {
   background-color: rgb(172, 172, 248);
@@ -17,11 +19,6 @@ center {
   justify-content: center;
 }
 
-#horario {
-  height: 500px;
-}
-
-
 .wtspImage {
   width: 80px;
 }
@@ -38,42 +35,29 @@ center {
 
 @media only screen and (max-width: 1024px){
 	/*Big smartphones [426px -> 600px]*/
-  #horario {
-    height: 500px
-  }
-  body{
-    background-color: rgb(44, 44, 129);
-  }
 }
 
 @media only screen and (max-width: 476px){
 	/*Small smartphones [325px -> 425px]*/
-  #horario {
-    height: 240px;
-  }
-  body{
-    background-color: rgb(107, 209, 107);
-  }
 }
 
 
 @media only screen and (max-width: 412px){  
-  body {
-    background-color: rgb(219, 96, 96);
-  }
-  #horario {
-    height: 222px;
-  }
 }
 
 @media only screen and (max-width: 320px){
 	/*Small smartphones [325px -> 425px]*/
-  #horario {
-    height: 200px;
-  }
-  body{
-    background-color: rgb(107, 209, 107);
-  }
 }
 
 
+
+
+iframe {
+  position: absolute;
+}
+
+#containerIframe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
