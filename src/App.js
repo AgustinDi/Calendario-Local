@@ -8,9 +8,9 @@ function App() {
     <div className="App">
       <header className="App-header">
           <NavBar/>
-          <center>
           <h1>Calendario</h1>
           <Horario></Horario>
+          <center>
           <h3>Sobre nosotros:</h3>
           <p>
             Bienvenidos a nuestro sitio web del calendario de talleres y clases de apoyo gratuitas. 
