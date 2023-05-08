@@ -1,15 +1,34 @@
 {
     "people":[
+        {"name":"Lorena Vallejo",
+        "rol":"Arte",
+        "cellphone": 5493547673524,
+        "rango": "Niños/as, Jovenes y Adultos"
+        },
+        {"name":"Flavia Castelli",
+        "rol":"Danza y Gimnasia",
+        "cellphone": 5493547308987,
+        "rango": "Niños/as, Jovenes y Adultos"
+        },
+        {"name":"Rodrigo Oliva",
+        "rol":"Canto",
+        "cellphone": 549354731650,
+        "rango": "Niños/as, Jovenes y Adultos"
+        },
+        {"name":"Victoria Brondo",
+        "rol":"Apoyo Primario",
+        "cellphone":5493517075064,
+        "rango": "Niños/as"  
+        },
         {"name":"Agustin Di giacinto",
         "rol":"Apoyo Secundario",
         "cellphone":5493547598556,
         "rango": "Primer Ciclo"  
         },
-        {"name":"Lorena",
-        "rol":"Arte",
+        {"name":"Vanesa",
+        "rol":"Potenciar Trabajo",
         "cellphone":5493547598556,
-        "rango": "Niños, Jovenes y Adultos"
+        "rango": "."  
         }
-
     ]
 }
