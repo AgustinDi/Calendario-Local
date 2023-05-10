@@ -24,15 +24,38 @@ center {
 
 .wtspImage {
   width: 80px;
+  filter: drop-shadow(0px 21px 5px 0px rgba(0, 0, 0, 0.75));
+}
+
+.containerWtspImage {
+  display: inline-block;
+  filter: drop-shadow(0px 21px 5px 0px rgba(0, 0, 0, 0.75));
 }
 
 .CardPeople {
   display: flex;
   justify-content: space-between;
+  min-width: 238px;
+  max-width: 100%;
+  padding: 1% 2% 1% 2%;
+  margin: 1%;
+
+  border: 1px solid blue;
+  border-radius: 10px;
+}
+
+.CardPeople h4 {
+  text-align: start;
+}
+
+.CardPeople p {
+  text-align: start;
+
 }
 
 #CardsPeople {
-  width: 30%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(none, 1fr));
 }
 
 h1 {

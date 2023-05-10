@@ -9,9 +9,11 @@ export default function CardPeople({people}){
                 <h4>{name}</h4>
                 <p>{rol} - {rango}</p>
             </div>
-            <a href={`https://wa.me/${cellphone}`}>
-                <img src={logo} alt={cellphone} className="wtspImage"/>
-            </a>
+            <div className="containerWtspImage">
+                <a href={`https://wa.me/${cellphone}`}>
+                    <img src={logo} alt={cellphone} className="wtspImage"/>
+                </a>
+            </div>
         </div>
     )
 }
