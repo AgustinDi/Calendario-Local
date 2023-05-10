@@ -1,8 +1,9 @@
 #navBar {
     display: flex;
-    width: 100vw;
+    width: 100%;
     justify-content: space-between;
-    border-bottom: 2px solid rgb(58, 58, 58);
+    align-items: flex-end;
+    border-bottom: 1px solid rgb(83, 83, 83);
     background-color: rgb(209, 209, 209);
 }
 
@@ -10,6 +11,16 @@
     width: 10%;  
     padding: 1%;  
     margin-left: 10%;
+}
+
+#indice {
+    margin-right: 10%;
+    display: flex;
+}
+
+#indice a {
+    width: max-content;
+    margin-left: 1%;
 }
 
 
@@ -20,7 +31,7 @@
     }
 }
 
-@media only screen and (max-width: 476px){
+@media only screen and (max-width: 600px){
 	/*Small smartphones [325px -> 425px]*/
     #movEvita {
         width: 25%;

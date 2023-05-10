@@ -10,9 +10,9 @@ export default function Indice(){
 
     return (
         <div id='indice' onClick={clicked}>
-                <span><a href="#sobreNosotros">#Sobre Nosotros</a></span>
-                <span><a href="#nuestrosProfes">#Nuestros Profes</a></span>
-                <span><a href="#informacion" >#Información</a></span>
+                <a href="#sobreNosotros">#Sobre Nosotros</a>
+                <a href="#nuestrosProfes">#Nuestros Profes</a>
+                <a href="#informacion" >#Información</a>
         </div>
     )
 }

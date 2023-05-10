@@ -2,6 +2,7 @@ import './App.css';
 import CardsPeople from './Component/CardsPeople.jsx';
 import Horario from './Component/Horario.jsx';
 import NavBar from './Component/NavBar';
+import local from './local.png';
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
           <h1>Calendario</h1>
           <Horario></Horario>
           <center>
+            <hr/>
+          <div id='containerSobreNosotros'>
+            <div>
           <h3 id='sobreNosotros'>Sobre nosotros:</h3>
           <p>
             Bienvenidos a nuestro sitio web del calendario de talleres y clases de apoyo gratuitas. 
@@ -19,6 +23,9 @@ function App() {
             y clases de apoyo emocionantes programados para el próximo mes. Nuestro espacio es un lugar
              acogedor y creativo diseñado para fomentar el aprendizaje y la colaboración.
           </p>
+            </div>
+          <img src={local} alt='local'/>
+          </div>
             <h2 id='nuestrosProfes'>Nuestros Profes!:</h2>
           <CardsPeople/>
             <h2 id='informacion'>Informacion</h2>

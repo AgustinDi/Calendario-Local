@@ -23,7 +23,7 @@ center {
 }
 
 .wtspImage {
-  width: 80px;
+  width: 90px;
   filter: drop-shadow(0px 21px 5px 0px rgba(0, 0, 0, 0.75));
 }
 
@@ -40,8 +40,10 @@ center {
   padding: 1% 2% 1% 2%;
   margin: 1%;
 
-  border: 1px solid blue;
-  border-radius: 10px;
+  /* border: 1px solid rgb(48, 48, 48); */
+  border-width: 0px 1px 1px 1px;
+  border-radius: 22px;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .CardPeople h4 {
@@ -55,31 +57,11 @@ center {
 
 #CardsPeople {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(none, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
 h1 {
   font-size: 48px;
-}
-
-
-@media only screen and (max-width: 1024px){
-	/*Big smartphones [426px -> 600px]*/
-
-
-}
-
-@media only screen and (max-width: 476px){
-	/*Small smartphones [325px -> 425px]*/
-}
-
-
-@media only screen and (max-width: 412px){  
-}
-
-@media only screen and (max-width: 320px){
-	/*Small smartphones [325px -> 425px]*/
-
 }
 
 ul {
@@ -90,6 +72,8 @@ ul {
 
 iframe {
   position: absolute;
+  border: none;
+  border-radius: 15px;
 }
 
 #containerIframe {
@@ -101,4 +85,67 @@ iframe {
   height: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
+}
+
+
+/* sobre nosotros */
+
+#containerSobreNosotros {
+  display: flex;
+  padding: 2%;
+}
+
+#containerSobreNosotros p {
+  text-align: start;
+  padding: 3%;
+  padding-left: 0px;
+}
+
+#containerSobreNosotros img {
+  border-radius: 22px;
+  width: 600px;
+  box-shadow:0px 2px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+hr {
+  width: 100%;
+  margin-top: 30px;
+  box-shadow: 0px 0px 1px 0px #124B93;
+}
+
+
+
+
+@media only screen and (max-width: 1024px){
+	/*Big smartphones [426px -> 600px]*/
+  #containerSobreNosotros {
+    flex-direction: column;
+  }
+
+  #containerSobreNosotros img {
+    width: 240px;
+  }
+
+}
+
+
+@media only screen and (max-width: 476px){
+  #CardsPeople {
+    grid-template-columns: 1fr;
+  }  
+}
+
+@media only screen and (max-width: 476px){
+
+}
+
+
+@media only screen and (max-width: 412px){ 
+
+}
+
+@media only screen and (max-width: 320px){
+	/*Small smartphones [325px -> 425px]*/
+  
 }
