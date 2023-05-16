@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: flex-end;
     border-bottom: 1px solid rgb(83, 83, 83);
-    background-color: rgb(209, 209, 209);
+    background-color: #d4d4d4;
 }
 
 #movEvita {
@@ -12,17 +12,6 @@
     padding: 1%;  
     margin-left: 10%;
 }
-
-#indice {
-    margin-right: 10%;
-    display: flex;
-}
-
-#indice a {
-    width: max-content;
-    margin-left: 1%;
-}
-
 
 @media only screen and (max-width: 1024px){
 	/*Big smartphones [426px -> 600px]*/
@@ -48,3 +37,84 @@
 	/*Small smartphones [325px -> 425px]*/
 
 }
+
+
+/* indice */
+
+#indice {
+    margin-right: 10%;
+    display: flex;
+}
+
+#indice a {
+    width: max-content;
+}
+
+
+.logo {
+    max-width: 5rem;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    #navBar {
+        align-items: center;
+    }
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        cursor: pointer;
+        width: min-content;
+        height: min-content;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+        z-index: 10;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
+}
+

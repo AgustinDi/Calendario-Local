@@ -24,7 +24,7 @@ export default function Slider() {
         <motion.div className='slider' drag='x' 
         dragConstraints={{right: 0, left: -width}} >
         {images.map((image, index) => (
-            <motion.div className='item'>
+            <motion.div className='item' key={index + 99}>
                 <img src={image} alt={index+99} />
             </motion.div>
         ))}

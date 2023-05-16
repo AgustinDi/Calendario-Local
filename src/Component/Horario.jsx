@@ -7,7 +7,6 @@ export default function Horario(){
 
     const updateDimensions = (e) => {
         let type = e.target || window;
-        console.log(type.screen.width)
         const {finalWidth, finalHeight} = getIframeDimensions(type.screen.width);
 
         setWidth(finalWidth);

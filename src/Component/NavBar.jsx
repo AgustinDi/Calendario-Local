@@ -1,24 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import '../Styles/NavBar.css';
 import movEvita from "../Data/movEvita.png";
+import movEvitaMini from "../Data/movEvitaMini.png";
 import Indice from "./Indice";
 
 export default function NavBar() {
-    const [resolution, setResolution] = useState({})
+    const [movimiento, setMovimiento] = useState(window.screen.width > 400 ? movEvitaMini : movEvita)
 
-    const updateDimensions = (e) => {
-        console.log(window.screen.width);
+    const updateMovimiento = (e) => {
+        setMovimiento(window.screen.width > 400 ? movEvitaMini : movEvita)
     }
 
     useEffect(() => {
-        window.addEventListener("resize", updateDimensions);
-        return () => window.removeEventListener("resize", updateDimensions);
+        window.addEventListener("resize", updateMovimiento);
+        return () => window.removeEventListener("resize", updateMovimiento);
     }, []);
 
     return (
         <div id="navBar">
-            <img src={movEvita} alt="Movimiento evita" id="movEvita"></img>
-            {/* <Indice/> */}
+            <img src={movimiento} alt="Movimiento evita" id="movEvita"></img>
+            <Indice/>
         </div>
     )
 }
