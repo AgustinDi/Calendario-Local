@@ -5,6 +5,10 @@
     align-items: flex-end;
     border-bottom: 1px solid rgb(83, 83, 83);
     background-color: #d4d4d4;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 
 #movEvita {
@@ -84,6 +88,7 @@
         cursor: pointer;
         width: min-content;
         height: min-content;
+        background-color: transparent;
     }
 
     .nav {
@@ -105,7 +110,8 @@
     .nav.visible {
         opacity: 1;
         visibility: visible;
-        z-index: 10;
+        z-index: 99;
+        padding-bottom: 100vh;
     }
     
     .nav-list {

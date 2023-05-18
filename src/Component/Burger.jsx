@@ -1,13 +1,14 @@
 import React from "react";
 import '../Styles/Burger.css';
+import { motion } from "framer-motion"; 
 
 function Burger (){
     return(
-        <div className="burger">
+        <motion.div whileTap={{ scale: 0.8 }} className="burger">
             <div className="bar"></div>
             <div className="bar"></div>
             <div className="bar"></div>
-        </div>
+        </motion.div>
     )
 }
 

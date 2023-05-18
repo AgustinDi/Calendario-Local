@@ -6,9 +6,11 @@ import Indice from "./Indice";
 
 export default function NavBar() {
     const [movimiento, setMovimiento] = useState(window.screen.width > 400 ? movEvitaMini : movEvita)
+    const [burger, setBurger] = useState(window.screen.width > 700)
 
-    const updateMovimiento = (e) => {
+    const updateMovimiento = () => {
         setMovimiento(window.screen.width > 400 ? movEvitaMini : movEvita)
+        setBurger(window.screen.width > 700)
     }
 
     useEffect(() => {
@@ -20,6 +22,7 @@ export default function NavBar() {
         <div id="navBar">
             <img src={movimiento} alt="Movimiento evita" id="movEvita"></img>
             <Indice/>
+            {burger ? null : null}
         </div>
     )
 }
