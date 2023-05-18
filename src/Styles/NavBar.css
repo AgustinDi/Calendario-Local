@@ -111,7 +111,7 @@
         opacity: 1;
         visibility: visible;
         z-index: 99;
-        padding-bottom: 100vh;
+        padding-bottom: 100vh;  
     }
     
     .nav-list {

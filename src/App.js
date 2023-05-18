@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header">
           <NavBar/>
-          <h1>Calendario</h1>
+          <h1 id='calendario'>Calendario</h1>
           <Horario></Horario>
           <center>
             <hr/>

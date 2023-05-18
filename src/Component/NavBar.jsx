@@ -3,6 +3,7 @@ import '../Styles/NavBar.css';
 import movEvita from "../Data/movEvita.png";
 import movEvitaMini from "../Data/movEvitaMini.png";
 import Indice from "./Indice";
+import { dragClicked } from "../Data/functions";
 
 export default function NavBar() {
     const [movimiento, setMovimiento] = useState(window.screen.width > 400 ? movEvitaMini : movEvita)
@@ -20,7 +21,7 @@ export default function NavBar() {
 
     return (
         <div id="navBar">
-            <img src={movimiento} alt="Movimiento evita" id="movEvita"></img>
+            <img src={movimiento} alt="Movimiento evita" id="movEvita" href='body' onClick={dragClicked}></img>
             <Indice/>
             {burger ? null : null}
         </div>

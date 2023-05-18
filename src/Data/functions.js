@@ -1,7 +1,4 @@
-
-
-
-export default function getIframeDimensions(width, height) {
+function getIframeDimensions(width) {
     let finalWidth = 550;
     if(320<width) finalWidth = 600
     if(470<width) finalWidth = 720
@@ -12,3 +9,12 @@ export default function getIframeDimensions(width, height) {
         finalHeight: 400
     }
 }
+
+function dragClicked(e){
+    e.preventDefault();
+    const target = e.target.getAttribute('href');
+    const element = document.querySelector(target);
+    element.scrollIntoView({ behavior: 'smooth' });
+}
+
+export {getIframeDimensions, dragClicked}

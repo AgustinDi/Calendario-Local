@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import getIframeDimensions from "../Data/functions";
+import {getIframeDimensions} from "../Data/functions";
 
 export default function Horario(){
     const [width, setWidth]   = useState(getIframeDimensions(window.screen.width).finalWidth);
