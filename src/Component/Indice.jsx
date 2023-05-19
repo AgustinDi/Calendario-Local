@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {Burger, Exit} from './Burger.jsx';
 
 export default function Indice(){
     const [burgerState, setBurgerState] = useState(false);
     const visible = 'visible';
+    const body = document.querySelector('body');
 
     
     function dragClicked(e){
@@ -12,6 +13,10 @@ export default function Indice(){
         const element = document.querySelector(target);
         element.scrollIntoView({behavior: 'smooth'});
     }
+
+    useEffect(()=>{
+        burgerState ? body.classList.add(visible) : body.classList.remove(visible)
+    },[burgerState, body])
 
     return (
         <div id="indice">

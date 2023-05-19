@@ -91,6 +91,10 @@
         background-color: transparent;
     }
 
+    body.visible {
+        overflow-y: hidden;
+    }
+
     .nav {
         opacity: 0;
         visibility: hidden;
