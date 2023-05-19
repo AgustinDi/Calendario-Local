@@ -10,11 +10,5 @@ function getIframeDimensions(width) {
     }
 }
 
-function dragClicked(e){
-    e.preventDefault();
-    const target = e.target.getAttribute('href');
-    const element = document.querySelector(target);
-    element.scrollIntoView({ behavior: 'smooth' });
-}
 
-export {getIframeDimensions, dragClicked}
+export {getIframeDimensions}

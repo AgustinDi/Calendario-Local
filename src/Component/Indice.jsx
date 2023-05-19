@@ -1,10 +1,17 @@
 import React, { useState } from "react";
 import {Burger, Exit} from './Burger.jsx';
-import { dragClicked } from "../Data/functions.js";
 
 export default function Indice(){
     const [burgerState, setBurgerState] = useState(false);
     const visible = 'visible';
+
+    
+    function dragClicked(e){
+        e.preventDefault();
+        const target = e.target.getAttribute('href');
+        const element = document.querySelector(target);
+        element.scrollIntoView({behavior: 'smooth'});
+    }
 
     return (
         <div id="indice">
