@@ -50,6 +50,7 @@ center {
   border-width: 0px 1px 1px 1px;
   border-radius: 22px;
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: #eeeeee;
 }
 
 .CardPeople h4 {
@@ -122,6 +123,14 @@ hr {
 }
 
 
+/* wave */
+
+.wave {
+  position: fixed;
+  bottom: -70px;
+  z-index: -100;
+  width: 100%;
+}
 
 
 @media only screen and (max-width: 1024px){
@@ -141,6 +150,12 @@ hr {
   #CardsPeople {
     grid-template-columns: 1fr;
   }  
+
+
+  .wave {
+    bottom: 0px;
+    width: max-content;
+  }
 }
 
 @media only screen and (max-width: 412px){ 

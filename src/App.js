@@ -3,6 +3,7 @@ import CardsPeople from './Component/CardsPeople.jsx';
 import CarruselInfo from './Component/CarruselInfo';
 import Horario from './Component/Horario.jsx';
 import NavBar from './Component/NavBar';
+import Wave from './Component/Wave';
 import local from './local.png';
 
 function App() {
@@ -30,9 +31,10 @@ function App() {
             <h2 id='nuestrosProfes'>Nuestros Profes!:</h2>
           <CardsPeople/>
             <h2 id='informacion'>Informacion</h2>
-          <CarruselInfo/> 
+          <CarruselInfo/>
           </center>
-      </header>
+          <Wave/>
+          </header>
     </div>
   );
 }
